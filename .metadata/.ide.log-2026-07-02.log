@@ -1,0 +1,6 @@
+2026-07-02 19:50:29,324 [INFO] Activator:176 - 
+
+
+2026-07-02 19:50:29,327 [INFO] Activator:177 - !SESSION log4j initialized
+2026-07-02 19:50:31,463 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-07-02 19:50:34,511 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connect timed out

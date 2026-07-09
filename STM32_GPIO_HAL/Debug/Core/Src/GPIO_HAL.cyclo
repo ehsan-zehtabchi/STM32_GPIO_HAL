@@ -1,0 +1,4 @@
+../Core/Src/GPIO_HAL.c:11:6:LED_init	1
+../Core/Src/GPIO_HAL.c:26:6:LED_init_D14	1
+../Core/Src/GPIO_HAL.c:41:6:LED_Blink_Fast	1
+../Core/Src/GPIO_HAL.c:53:6:LED_Blink_Fast_D14	1
