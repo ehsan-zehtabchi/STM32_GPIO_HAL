@@ -87,6 +87,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   LED_init();
   LED_init_D14();
+  Inner_Button_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -94,8 +95,17 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    LED_Blink_Fast();
-    LED_Blink_Fast_D14();
+  
+    if(Read_Inner_Button() == 0)
+    {
+      LED_Blink_Fast();
+      LED_Blink_Fast_D14();
+    }
+    else
+    {
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET);
+    }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

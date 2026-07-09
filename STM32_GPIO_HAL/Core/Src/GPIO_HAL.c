@@ -38,6 +38,22 @@ GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 }
 
+//Input: PC13
+void Inner_Button_init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  /* Enable GPIOC clock */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+
+  /* Configure GPIO pin : PC13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+}
+
 void LED_Blink_Fast(void)
 {
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
@@ -60,4 +76,9 @@ void LED_Blink_Fast_D14(void)
   HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
   HAL_Delay(2000);
 
+}
+
+uint8_t Read_Inner_Button(void)
+{
+  return HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET ? 0 : 1;
 }

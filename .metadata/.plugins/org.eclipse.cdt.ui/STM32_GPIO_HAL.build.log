@@ -1,10 +1,10 @@
-19:22:33 **** Incremental Build of configuration Debug for project STM32_GPIO_HAL ****
+20:19:55 **** Incremental Build of configuration Debug for project STM32_GPIO_HAL ****
 make -j20 all 
 arm-none-eabi-size  STM32_GPIO_HAL.elf 
    text	   data	    bss	    dec	    hex	filename
-   5976	     12	   1572	   7560	   1d88	STM32_GPIO_HAL.elf
+   6196	     12	   1572	   7780	   1e64	STM32_GPIO_HAL.elf
 Finished building: default.size.stdout
  
 
-19:22:33 Build Finished. 0 errors, 0 warnings. (took 196ms)
+20:19:55 Build Finished. 0 errors, 0 warnings. (took 135ms)
 

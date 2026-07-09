@@ -1,4 +1,6 @@
 ../Core/Src/GPIO_HAL.c:11:6:LED_init	1
 ../Core/Src/GPIO_HAL.c:26:6:LED_init_D14	1
-../Core/Src/GPIO_HAL.c:41:6:LED_Blink_Fast	1
-../Core/Src/GPIO_HAL.c:53:6:LED_Blink_Fast_D14	1
+../Core/Src/GPIO_HAL.c:42:6:Inner_Button_init	1
+../Core/Src/GPIO_HAL.c:57:6:LED_Blink_Fast	1
+../Core/Src/GPIO_HAL.c:69:6:LED_Blink_Fast_D14	1
+../Core/Src/GPIO_HAL.c:81:9:Read_Inner_Button	1

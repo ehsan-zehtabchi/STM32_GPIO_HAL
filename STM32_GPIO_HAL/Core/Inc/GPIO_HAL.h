@@ -14,4 +14,6 @@ void LED_Blink_Fast(void);
 void LED_init_D14(void);
 void LED_Blink_Fast_D14(void);
 
+void Inner_Button_init(void);
+uint8_t Read_Inner_Button(void);
 #endif /* INC_GPIO_HAL_H_ */
